@@ -3,7 +3,7 @@
  * @Author: 张晓兰
  * @Date: 2019-11-07 17:47:09
  * @LastEditors: 张晓兰
- * @LastEditTime: 2019-11-15 10:50:14
+ * @LastEditTime: 2019-11-15 11:14:56
  * @version: v1.0.0
  -->
 <template>
@@ -52,10 +52,11 @@ export default {
                 console.log(data)
                 if(data[i].gid == gid){
                   that.Detali = data[i];
-                  console.log(that.Detali)
+                  console.log(params)
                 }
             }
-        }).catch(function(err){
+        })
+        .catch(function(err){
                 console.log(err)
         })
     },
