@@ -14,7 +14,7 @@
 				<span class="xian xian2"></span>
 			</div>
 		</div>
-		<ShopListContent></ShopListContent>
+		<ShopListContent1></ShopListContent1>
 	</div>
 </template>
 
@@ -22,7 +22,7 @@
 	
 
 <script>
-	import ShopListContent from '../components/ShopListContent';
+	import ShopListContent1 from '../components/ShopListContent1';
 
 	export default {
 		name: 'FuJin',
@@ -32,7 +32,7 @@
 			}
 		},
 		components: {
-			ShopListContent
+			ShopListContent1
 		}
 	}
 </script>

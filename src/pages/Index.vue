@@ -14,9 +14,9 @@
 		<FuJin></FuJin>
 		<MineFooter class="footer"></MineFooter>
 		<div class="gwc">
-			<a href="#">
+			<router-link to='/ShoppingCar'>
 				<img src="../assets/img/in_gwc.png"/>
-			</a>
+			</router-link>
 		</div>
 		<div class="zndc">
 			<a href="#">

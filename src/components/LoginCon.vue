@@ -13,7 +13,7 @@
 				<img v-show="!isShow" @click="changeDisplay" src="../assets/img/lo_xianshi.png" />
 			</div>
 			<span class="tishi">{{msg}}</span>
-			<router-link v-bind:to='dizhi'><div @click="panduan"" class="dl">登录</div></router-link>
+			<router-link v-bind:to='dizhi'><div @click="panduan" class="dl">登录</div></router-link>
 			<div class="conbottom">
 				<router-link to='/Register'><span>立即注册</span></router-link>
 				<router-link to='/FindPass'><span class="right">忘记密码</span></router-link>
@@ -53,7 +53,9 @@
 	     			this.msg="手机号或密码不能为空！";
 	     			this.dizhi="";
 	     		}else if(r.test(this.shoujihao)){
-			  		fetch('api/User/login/'+this.mimaval+'/'+this.shoujihao)
+	     			fetch('api/User/login?pass='+this.mimaval+'&tel='+this.shoujihao,{
+	     				method:'post'
+	     			})
 			      	.then(res=>{
 			       	 	return res.json();
 			    	})
@@ -61,7 +63,7 @@
 			      		console.log(data);
 			      		if(data==1){
 			      			this.msg="登录成功！";
-			      			this.dizhi="/";
+			      			this.$router.push({path:'/'});
 			      		}else if(data==0){
 			      			this.msg="手机号或密码输入不正确！";
 			      			this.dizhi="";

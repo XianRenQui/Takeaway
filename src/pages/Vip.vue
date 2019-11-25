@@ -1,35 +1,32 @@
 <template>
-	<div class="vip">
-		<VipTitle></VipTitle>
-		<MineFooter class="footer"></MineFooter>
-	</div>
+    <div class="box">
+        <huiyuan1></huiyuan1>
+        <lhHYzq></lhHYzq>
+        <sandatequan></sandatequan>
+        <MineFooter class="footer"></MineFooter>
+    </div>
 </template>
-
 <script>
-	import VipTitle from '../components/VipTitle';
-	import MineFooter from '../components/MineFooter';
-	
-	export default {
-		name: 'Login',
-		data() {
-			return {
-
-			}
-		},
-		components: {
-			VipTitle,MineFooter
-		}
-	}
+import huiyuan1 from '../components/huiyuan1';
+import lhHYzq from '../components/lhHYzq';
+import sandatequan from '../components/sandatequan';
+import MineFooter from '../components/MineFooter';
+export default {
+  name: 'back',
+  data () {
+    return {
+      
+    }
+  },
+  components:{
+      huiyuan1,MineFooter,lhHYzq,sandatequan
+  }
+}
 </script>
 
-<style scoped="scoped">
-	.vip{
-		padding-bottom: .56rem;
-	}
-	.footer{
-		width: 100%;
-		position: fixed;
-		bottom: 0;
-		left: 0;
-	}
+<style scoped>
+ 	.footer{
+ 		position: sticky;
+ 		bottom: 0;
+ 	}
 </style>

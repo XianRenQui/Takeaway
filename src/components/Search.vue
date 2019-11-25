@@ -1,7 +1,9 @@
 <template>
 	<div class="box" id="searchBar">
-		<input type="text" :placeholder="tip" />
-		<img src="../assets/img/in_search.png" alt="" />
+		<router-link to="/SecSearch">
+			<input type="text" :placeholder="tip" />
+			<img src="../assets/img/in_search.png" alt="" />
+		</router-link>
 	</div>
 </template>
 

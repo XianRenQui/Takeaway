@@ -56,7 +56,9 @@
 	     			this.msg="两次密码不一样！";
 	     			this.dizhi="";
 	     		}else if(r.test(this.shoujihao)){
-	     			fetch('api/User/register/'+this.mimaval+'/'+this.shoujihao)
+	     			fetch('api/User/register?pass='+this.mimaval+'&tel='+this.shoujihao,{
+	     				method:'post'
+	     			})
 			      	.then(res=>{
 			       	 	return res.json();
 			    	})
@@ -64,7 +66,7 @@
 			      		console.log(data);
 			      		if(data==1){
 			      			this.msg="注册成功，请登录！";
-			      			this.dizhi="/Login";
+			      			this.$router.push({path:'/Login'});
 			      		}else if(data==0){
 			      			this.msg="手机号或密码输入不正确！";
 			      			this.dizhi="";

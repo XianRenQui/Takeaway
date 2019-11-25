@@ -70,7 +70,7 @@
 	import axios from 'axios';
 
 	export default {
-	    name:"ShopListContent",
+	    name:"ShopListCon",
 	    data(){
 	        return {
 	            shops:[
@@ -79,14 +79,14 @@
 	        }
 	    },
 	    created(){
-//		    axios.get('api/shops')
-//		    .then((response)=> {
-//		        console.log(response.data);
-//		        this.shops = response.data;
-//		    })
-//		    .catch(function (error) {
-//		        console.log(error);
-//		    });
+		    axios.get('/shops')
+		    .then((response)=> {
+		        console.log(response.data);
+		        this.shops = response.data;
+		    })
+		    .catch(function (error) {
+		        console.log(error);
+		    });
 	  	},
 	
 	}

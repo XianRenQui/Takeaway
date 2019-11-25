@@ -28,4 +28,7 @@ a{
 	text-decoration: none;
 	color: black;
 }
+img{
+	display: block;
+}
 </style>

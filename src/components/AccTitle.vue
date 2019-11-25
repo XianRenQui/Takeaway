@@ -23,7 +23,6 @@
 
 <style scoped="scoped">
 	.title{
-		/*width: 100%;*/
 		height: .46rem;
 		background: white;
 	}

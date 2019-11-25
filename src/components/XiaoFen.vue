@@ -56,10 +56,10 @@
 				</a>
 			</li>
 			<li>
-				<a href="#">
+				<router-link to='/AllKindsPage'>
 					<img src="../assets/img/in_xf10.jpg"/>
 					<span>全部分类</span>
-				</a>
+				</router-link>
 			</li>
 		</ul>
 	</div>

@@ -1,9 +1,9 @@
 <template>
 	<div class="con">
 		<ul>
-			<li class="first">
+			<!--<li class="first">
 				
-			</li>
+			</li>-->
 		</ul>
 	</div>
 </template>
